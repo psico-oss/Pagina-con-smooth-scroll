@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pagina</title>
+
+    <link rel="stylesheet" href="css/bootstrap-flex.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+      smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      callback: function ( anchor, toggle ) {} // Function to run after scrolling
+      });
+    </script>
+    
+  </head>
+  <body>
+
+    <div class="container-fluid navbar-fixed-top">
+      <div class="row flex-items-xs-between menu-1 flex-items-xs-middle">
+        <div class="col">
+          <img src="imagenes/logo.png" width="50px" height="50px">
+        </div>
+        <div class="col-xs-2">
+          <a data-scroll href="#sec-1" class="btn btn-outline-info" role="button" aria-pressed="true">Inicio</a>
+        </div>
+        <div class="col-xs-2">
+          <a data-scroll href="#sec-2" class="btn btn-outline-info" role="button" aria-pressed="true">Acerca de</a>
+        </div>
+        <div class="col-xs-2">
+          <a data-scroll href="#sec-3" class="btn btn-outline-info" role="button" aria-pressed="true">Trabajo</a>
+        </div>
+        <div class="col-xs-2">
+          <a data-scroll href="#sec-4" class="btn btn-outline-info" role="button" aria-pressed="true">Badoo</a>
+        </div>
+        <div class="col">
+          <span>ESP</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <span>ENG</span>
+        </div>
+      </div>
+    </div>
+    <!-- FIN MENU -->
+    
+    <!-- SECCIÓN 1 -->
+    <div class="container-fluid">
+      <div class="row flex-items-xs-center slider-1 flex-items-xs-middle" id="sec-1" >
+        <div class="row">
+          <div class="col-xs-12"><h1>Soluciones digitales de alto voltaje</h1></div>
+          <div class="col-xs-12"><h3>Eos et adipisci sed mollitiae</h3></div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN SECCIÓN -->
+
+    <!-- SECCIÓN 2 -->
+    <div class="container-fluid">
+      <div class="row flex-items-xs-center slider-2 flex-items-xs-middle" id="sec-2" >
+        <div class="row">
+          <div class="col-xs-12"><h1>Conectamos las necesidades del negocio con los deseos de las personas</h1></div>
+          <br> </br>
+          <br> </br>
+
+          <div class="col-xs-12"><div class="alboton"><button type="button" class="btn btn-warning">MIRA LO QUE HACEMOS</button></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row flex-items-xs-center slider-3 flex-items-xs-middle" id="sec-3" >
+        <div class="row">
+          <div class="col-xs-12"><h1>Nuestros labs son el espacio donde nos adelantamos a los desafíos del futuro</h1></div>
+          <div class="col-xs-12"><div class="alboton"><button type="button" class="btn btn-warning">EXPLORA NUESTRO ADN</button></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row flex-items-xs-center slider-4 flex-items-xs-middle" id="sec-4" >
+        <div class="row">
+          <div class="col-xs-12"><h1>Fluxer del futuro, hagamos match!</h1></div>
+          <div class="col-xs-12"><div class="alboton"><button type="button" class="btn btn-warning">CONOCE LAS TENDENCIAS</button></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer">
+      <div><h6>Soy un footer</a></h6></div>
+    </div>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>
