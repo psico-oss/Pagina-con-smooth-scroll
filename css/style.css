@@ -1,5 +1,5 @@
 body{
-  color: white;
+  color: #5dc1b9;
 }
 .menu-1{
 	height: 60px;
@@ -30,6 +30,12 @@ body{
 }
 .slider-4{
 	background-image:url(../imagenes/slider4.jpg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+.fondo{
+	background-image:url(../imagenes/cv.jpg);
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-size: cover;
@@ -106,3 +112,151 @@ body{
   .btn{
     border-radius: 40px;
   }
+  /*empiezo formulario*/
+.h1F{
+  text-align: center;
+  margin: 10px;
+}
+
+form{
+  background: #fff;
+  width: 100%;
+  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+.form{
+  width: 100%;
+  margin: auto;
+}
+
+form .grupo{
+  position: relative;
+  margin: 45px;
+}
+
+.inputF, textarea{
+  background: none;
+  color:#c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border:none;
+  border-bottom: 1px solid var(--colorTextos);
+  resize: none;
+}
+
+.inputF:focus,textarea:focus{
+  outline: none;
+  color: rgb(94,93,93);
+}
+
+.inputF:focus~label, 
+.inputF:valid~label, 
+textarea:focus~label, textarea:valid~label{
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  color: #2196F3;
+}
+
+.labelF{
+  color: var(--colorTextos);
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top:10px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+
+.inputF:focus~.barra::before, textarea:focus~.barra::before{
+  width: 100%;
+}
+.barra{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.barra::before{
+  content: '';
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #5dc1b9, #FC5C7D);
+  transition: 0.3s ease all;
+  left: 0%;
+}
+.buttonF{
+  background: #FC5C7D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: block;
+  width: 100px;
+  height: 40px;
+  border:none;
+  color:#fff; 
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1100px){
+  form{
+      width: 100%;
+  }
+}
+
+@media screen and (max-width:600px){
+  form{
+      width: 80%;
+  }
+}
+
+@media screen and (max-width:450px){
+  form{
+      width: 80%;
+  }
+}
+
+@media screen and (max-width:300px){
+  form{
+    text-align: center;
+      width:100%;
+  }
+
+}
+/*boton para volver a la pagina principal*/
+.btn-hoome{
+  position:fixed;
+  width:60px;
+  height:60px;
+  line-height: 63px;
+  bottom:70px;
+  right:25px;
+  background:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:35px;
+  z-index:100;
+  transition: all 300ms ease;
+}
+.btn-hoome:hover{
+  background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+  .btn-hoome{
+      width:63px;
+      height:63px;
+      line-height: 66px;
+}
+}
