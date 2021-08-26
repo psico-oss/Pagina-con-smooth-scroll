@@ -1,5 +1,6 @@
 body {
     color: #5dc1b9;
+    background-color: #444;
 }
 
 .menu-1 {
@@ -56,13 +57,12 @@ body {
 }
 
 .footer {
-    background: #444;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+padding: 20px;
+color: black;
 }
-
-
+.alboton1{
+    text-align: center;
+}
 /*Boton ESP-ENG*/
 
 .idioma {
@@ -301,6 +301,79 @@ textarea:focus~.barra::before {
 
 .btn-hoome:hover {
     background: #20ba5a;
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../imagenes/background-footer.svg);
+    background-size: cover;
+
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
 }
 
 @media only screen and (min-width:320px) and (max-width:768px) {
