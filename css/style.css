@@ -1,7 +1,14 @@
 body {
-    color: #5dc1b9;
+    color: #0a1312;
     background-color: #444;
     overflow-x: hidden;
+}
+
+h1 {}
+
+h2 {
+    margin-top: 5px;
+    text-align: left;
 }
 
 .menu-1 {
@@ -351,6 +358,15 @@ footer {
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
+}
+
+.logo2 {
+    padding-right: 5px;
+    padding-bottom: -5pxW;
+}
+
+.logo2-titulo {
+    display: flex!important;
 }
 
 .box__footer {
