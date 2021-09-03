@@ -1,6 +1,7 @@
 body {
     color: #5dc1b9;
     background-color: #444;
+    overflow-x: hidden;
 }
 
 .menu-1 {
