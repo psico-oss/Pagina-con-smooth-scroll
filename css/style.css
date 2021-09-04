@@ -1,3 +1,11 @@
+:root {
+    --Primario: rgb(127, 255, 211);
+    --Secundario: rgb(68, 115, 196);
+    --PrimarioBis: rgb(217, 255, 127);
+    --SecundarioBis: rgb(33, 55, 94);
+    --Negro: rgb(12, 9, 26);
+}
+
 body {
     color: #0a1312;
     background-color: #444;
@@ -9,6 +17,10 @@ h1 {}
 h2 {
     margin-top: 5px;
     text-align: left;
+}
+
+.nav {
+    color: var(--Negro);
 }
 
 .menu-1 {
@@ -26,7 +38,7 @@ h2 {
 }
 
 .slider-1 {
-    background-image: url(../imagenes/slider1.jpg);
+    background-image: url(../imagenes/slider4.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -40,16 +52,16 @@ h2 {
 }
 
 .slider-3 {
-    background-image: url(../imagenes/slider3.jpg);
+    background-image: url(../imagenes/slider2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .slider-4 {
-    background-image: url(../imagenes/slider4.jpg);
+    background-image: url(../imagenes/slider6.jpg);
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -76,13 +88,23 @@ h2 {
     height: 100%!important;
 }
 
+.card-title {
+    background-color: var(--Secundario);
+    text-align: center;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transform: scale(.9);
+    transition: transform 500ms;
+}
+
 
 /*Boton ESP-ENG*/
 
 .idioma {
     padding-right: 10px;
     padding-top: 10px;
-    background-color: #7bdbbbee;
+    background-color: var(--Primario);
 }
 
 .switch {
@@ -275,20 +297,17 @@ textarea:focus~.barra::before {
     border-radius: 2px;
     text-decoration: none;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
-    outline-color: rgba(255, 255, 255, 0);
+    outline-color: var(--Negro);
     outline-offset: 20px;
-    background-color: #7fffd4;
+    background-color: var(--Primario);
     text-shadow: 1px 1px 2px #ffffff;
 }
 
 .selected {
-    border: 1 solid;
-    border-color: #ff0000;
-    border-radius: 40px;
     box-shadow: #343434;
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 20px;
-    background-color: #7bdbbbee;
+    background-color: var(--Primario);
     text-shadow: 1px 1px 2px #ffffff;
 }
 
