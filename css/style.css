@@ -144,7 +144,36 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-
+/*menu hamburguesa*/
+.oculto{
+    display: none;
+    list-style: none;
+}
+header{
+    width: 100%;
+}
+header nav{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #7a7a7a;
+}
+.menu_bar{
+    display: none;
+    list-style: none;
+}
+header nav ul{
+    overflow:hidden;
+}
+header nav ul li{
+    float:left
+}
+header nav ul li a{
+    color: #FFF;
+    padding: 20px;
+    display:block;
+    text-decoration: none;
+}
 /*bajo los botones en las secciones*/
 
 .alboton {
@@ -292,6 +321,7 @@ textarea:focus~.barra::before {
     text-shadow: 1px 1px 2px #ffffff;
 }
 
+
 @media screen and (max-width:1360px) {
     .btn-personalize {
         border-radius: 40px;
@@ -311,7 +341,11 @@ textarea:focus~.barra::before {
         padding: 15px 20px;
     }
 }
-
+@media screen and (max-width:800px) {
+   .ocultado{
+       display: none;
+   }
+}
 @media screen and (max-width:740px) {
     .btn-personalize {
         border-radius: 40px;
