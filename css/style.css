@@ -167,34 +167,50 @@ input:checked+.slider:before {
 }
 
 /*menu hamburguesa*/
-.oculto{
-    display: none;
-    list-style: none;
+
+header {
+    position: fixed;
+    z-index: 100;
+	width:100%;
 }
-header{
-    width: 100%;
+
+header nav {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	background:#024959;
 }
-header nav{
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    background-color: #7a7a7a;
+
+.menu_bar {
+	display:none;
 }
-.menu_bar{
-    display: none;
-    list-style: none;
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
 }
-header nav ul{
-    overflow:hidden;
+
+header nav ul li {
+	float:left;
 }
-header nav ul li{
-    float:left
+
+header nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
 }
-header nav ul li a{
-    color: #FFF;
-    padding: 20px;
-    display:block;
-    text-decoration: none;
+
+header nav ul li span {
+	margin-right:10px;
+}
+
+header nav ul li a:hover {
+	background:#037E8C;
+}
+
+section {
+	padding:20px;
 }
 /*bajo los botones en las secciones*/
 
@@ -360,11 +376,55 @@ textarea:focus~.barra::before {
         padding: 15px 20px;
     }
 }
+@media screen and (max-width:800px ) {
+    header{
+        position: fixed;
+        z-index: 100;
+    }
+    header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#024959;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+}
 @media screen and (max-width:800px) {
    .ocultado{
        display: none;
    }
 }
+/*
 @media screen and (max-width:740px) {
     .btn-personalize {
         border-radius: 40px;
@@ -406,7 +466,7 @@ textarea:focus~.barra::before {
     }
 }
 
-
+*/
 /*boton para volver a la pagina principal*/
 
 .btn-hoome {
