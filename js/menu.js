@@ -19,4 +19,56 @@ function main(){
 
 	});
 
+	$('#btn1').click(function(){
+
+	
+			$('nav').animate({
+				left: '-100%'
+			});
+			contador = 0;
+	
+
+	});
+	$('#btn2').click(function(){
+
+	
+		$('nav').animate({
+			left: '-100%'
+		});
+		contador = 0;
+
+
+});
+$('#btn3').click(function(){
+
+	
+	$('nav').animate({
+		left: '-100%'
+	});
+	contador = 0;
+
+
+});
+$('#btn4').click(function(){
+
+	
+	$('nav').animate({
+		left: '-100%'
+	});
+	contador = 0;
+
+
+});
+$('#btn5').click(function(){
+
+	
+	$('nav').animate({
+		left: '-100%'
+	});
+	contador = 0;
+
+
+});
+
 };
+

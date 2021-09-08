@@ -12,8 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-h1 {}
-
 h2 {
     margin-top: 5px;
     text-align: left;
@@ -45,21 +43,21 @@ h2 {
 }
 
 .slider-2 {
-    background-image: url(../imagenes/slider2.jpg);
+    background-image: url(../imagenes/slider18.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .slider-3 {
-    background-image: url(../imagenes/slider2.jpg);
+    background-image: url(../imagenes/slider19.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .slider-4 {
-    background-image: url(../imagenes/slider6.jpg);
+    background-image: url(../imagenes/slider20.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -83,7 +81,7 @@ h2 {
 .fondo {
     background-image: url(../imagenes/cv.jpg);
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     height: 100%!important;
 }
@@ -91,7 +89,6 @@ h2 {
 .card-title {
     background-color: var(--Secundario);
     text-align: center;
-    margin: 30px;
     border: 1px solid black;
     border-radius: 5px;
     transform: scale(.9);
@@ -212,17 +209,6 @@ header nav ul li a:hover {
 section {
 	padding:20px;
 }
-/*bajo los botones en las secciones*/
-
-.alboton {
-    position: relative;
-    top: 200px;
-}
-
-.btn {
-    border-radius: 40px;
-}
-
 
 /*empiezo formulario*/
 
